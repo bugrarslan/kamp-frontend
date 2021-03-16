@@ -25,4 +25,12 @@ export class CategoryComponent implements OnInit {
   setCurrentCategory(category: Category) {
     this.currentCategory = category;
   }
+
+  getCurrentcategoryClass(category: Category) {
+    if(category == this.currentCategory){
+      return "list-group-item active"
+    }else{
+      return "list-grop-item"
+    }
+  }
 }
